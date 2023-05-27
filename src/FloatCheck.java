@@ -1,18 +1,17 @@
 import java.util.Scanner;
 
-public class IntegersCheck {
+public class FloatCheck {
     public static void main(String[] args) {
-
-      int a,b,c;
-      Scanner sc = new Scanner(System.in);
+        float a, b, c;
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number");
-        a = sc.nextInt();
+        a = sc.nextFloat();
         System.out.println("Enter second number");
-        b= sc.nextInt();
+        b = sc.nextFloat();
         System.out.println("Enter third number");
-        c= sc.nextInt();
+        c = sc.nextFloat();
 
-        int max = Math.max(Math.max(a, b),c);
+        float max = Math.max(Math.max(a, b), c);
         if (max == a) {
             System.out.println("a is maximum: " + a);
         } else if (max == b) {
@@ -21,4 +20,5 @@ public class IntegersCheck {
             System.out.println("c is maximum: " + c);
         }
     }
+
 }
